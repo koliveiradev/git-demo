@@ -9,8 +9,26 @@
 </head>
 
 <body>
-    <h1>Page Title</h1>
+    <h1>WHAAAAATSSS UPPPPP!</h1>
     <script src="scripts.js"></script>
+    <div class="counter-container">
+        <span id="counter">0</span>
+        <button type="button" id="btn-counter">CLICKKKK!</button>
+    </div>
+    <script>
+        const counterElement = document.getElementById('counter');
+        const incrementBtn = document.getElementById('btn-counter');
+
+        let counter = 0;
+
+        function incrementCounter() {
+        counter++;
+        counterElement.textContent = counter.toString();
+        }
+
+        incrementBtn.addEventListener('click', incrementCounter);
+    </script>
+
 </body>
 
 </html>
